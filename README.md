@@ -1,10 +1,14 @@
 # Chainer
 作ったchainerコードの整理
 
-# CNN
+## CNN
 主にOWLIFTの学習とか
 
-## Markdown
+## CRNN
+CNN+RNNの動画認識
+80x60 gray scale video
+
+### Markdown
 ***
 **太文字**
 *italic*
