@@ -1,2 +1,2 @@
 # Chainer
-for studying
+作ったchainerコードの整理
