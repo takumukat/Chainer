@@ -5,7 +5,7 @@
 主にOWLIFTの学習とか
 
 ## CRNN
-CNN+RNNの動画認識
+CNN+RNNの動画認識\n
 80x60 gray scale video
 
 ### Markdown
