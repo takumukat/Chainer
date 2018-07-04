@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# making video dataset
+# making video dataset ver2
 # 動画の最後のフレームで正解，不正解を判断する
 
 import os

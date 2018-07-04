@@ -10,9 +10,6 @@ from chainer import optimizers
 from chainer import Variable
 from chainer import cuda
 from CNNLSTMmodel_original import CNNLSTM as original
-from CNNLSTMmodel_dout import CNNLSTM as dout1
-from CNNLSTMmodel_dout2 import CNNLSTM as dout2
-from CNNbasedCNNLSTMmodel import CNNbasedCNNLSTM as CNNalpha
 
 import time
 import datetime
@@ -326,7 +323,7 @@ def main():
     #PATH = '/home/hashimoto/PycharmProjects/AI/datasets/fall_detection_dataset_contrast/'
     max_epoch = 200
     batch_size = 30
-    result = '/home/hashimoto/PycharmProjects/AI/CNNLSTM_result/'
+    result = 'CNNLSTM_result/'
     gpuID = 0
     # -------------------------------------------------------------------------------------------------
 

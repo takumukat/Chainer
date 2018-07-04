@@ -10,7 +10,6 @@ from chainer import optimizers
 from chainer import Variable
 from chainer import cuda
 from CNNLSTMmodel_original import CNNLSTM as original
-from CRNN_model_ver2 import CRNN
 
 import time
 import datetime
@@ -272,13 +271,13 @@ def save_graph_iter(iterloss, iteracc, epoch, iterlossdata, epochlossdata, itera
 
 def main():
     # -------------------------------------setting----------------------------------------------------
-    #PATH = '/home/hashimoto/PycharmProjects/AI/datasets/FALL_DETECTION/'
-    #aPATH = '/home/hashimoto/PycharmProjects/AI/datasets/dataset_2m6m/train/'
-    aPATH = '/home/hashimoto/PycharmProjects/AI/datasets/dataset_2m3m4m5m6m/train2m3m4m5m6m/'
-    bPATH = '/home/hashimoto/PycharmProjects/AI/datasets/dataset_2m3m5m6m/test/'
+    #PATH = 'datasets/FALL_DETECTION/'
+    #aPATH = 'datasets/dataset_2m6m/train/'
+    aPATH = 'datasets/dataset_2m3m4m5m6m/train2m3m4m5m6m/'
+    bPATH = 'datasets/dataset_2m3m5m6m/test/'
     max_epoch = 40
     batch_size = 50
-    result = '/home/hashimoto/PycharmProjects/AI/CNNLSTM_result/'
+    result = 'CNNLSTM_result/'
     gpuID = 1
     # -------------------------------------------------------------------------------------------------
 
@@ -313,20 +312,4 @@ def main():
 
 
 if __name__ == '__main__':
-    #main()
-    #"""
-    lim = 5
-    count = 0
-    while count <= lim:
-        testacc = main()
-        print('last test accuracy: {}'.format(testacc[-1]))
-        if len(testacc) < 0:
-            count += 1
-    """
-    while True:
-        testAcc =main()
-        print(testAcc[-1])
-
-        if testAcc[-1] > 0.8:
-            break
-    """
+    main()

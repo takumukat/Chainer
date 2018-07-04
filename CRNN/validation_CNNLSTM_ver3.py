@@ -189,15 +189,15 @@ def validation(modelName, testData, gpuID, folderName, videoDict):
 
 
 def main(modelName):
-    mix = '/home/hashimoto/PycharmProjects/AI/datasets/realtime_test/'
-    mix2 = '/home/hashimoto/PycharmProjects/AI/datasets/realtime_test2/'
-    mix3 = '/home/hashimoto/PycharmProjects/AI/datasets/realtime_test3/'
+    mix = 'datasets/realtime_test/'
+    mix2 = 'datasets/realtime_test2/'
+    mix3 = 'datasets/realtime_test3/'
     fall = 'datasets/fall_detection_270_329/fall_270/180117_17_06_53_fall5m/'
     fall2 = 'datasets/fall_detection_270_329/fall_270/171120_20_40_07_fall6m_24/'
     other = 'datasets/fall_detection_270_329/other_329/1225_lie5m_0002/'
-    test3m = '/home/hashimoto/PycharmProjects/AI/datasets/dataset_3mtrain/test/'
-    test26 = '/home/hashimoto/PycharmProjects/AI/datasets/dataset_2m6m/test2/'
-    test4 = '/home/hashimoto/PycharmProjects/AI/datasets/augdataset_4m/aug_test2/'
+    test3m = 'datasets/dataset_3mtrain/test/'
+    test26 = 'datasets/dataset_2m6m/test2/'
+    test4 = 'datasets/augdataset_4m/aug_test2/'
 
     gpuID = 1
 
@@ -210,7 +210,7 @@ def main(modelName):
         print(dir)
         oneFrame(mix+dir+'/')
     """
-    result = '/home/hashimoto/PycharmProjects/AI/CNNLSTM_validation_compare/'
+    result = 'CNNLSTM_validation_compare/'
     testPath = test4
 
     dirs = sorted(os.listdir(testPath))

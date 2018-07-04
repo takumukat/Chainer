@@ -10,7 +10,7 @@ from chainer import Variable
 from chainer import cuda
 from CNNLSTMmodel_original import CNNLSTM as original
 from CNNLSTMmodel_original_test import CNNLSTM as testmodel
-from makeData import 
+from makeData import MakeData
 
 import datetime
 import os
